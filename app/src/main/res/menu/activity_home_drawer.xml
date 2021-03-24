@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/shop"
+            android:title="@string/nav_ventas" />
+        <item
+            android:id="@+id/nav_inventario"
+            android:icon="@drawable/inventario"
+            android:title="@string/nav_inventario" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/order"
+            android:title="@string/nav_pedidos" />
+        <item
+            android:id="@+id/nav_facturas"
+            android:icon="@drawable/factura"
+            android:title="@string/nav_facturas" />
+        <item
+            android:id="@+id/nav_gastos"
+            android:icon="@drawable/gastos"
+            android:title="@string/nav_gastos" />
+        <item
+            android:id="@+id/nav_caja"
+            android:icon="@drawable/caja"
+            android:title="@string/nav_caja" />
+
+        <item
+            android:id="@+id/nav_provedores"
+            android:icon="@drawable/provedor"
+            android:title="@string/nav_provedores" />
+
+        <item
+            android:id="@+id/nav_prestamos"
+            android:icon="@drawable/provedor"
+            android:title="@string/nav_prestamos" />
+
+        <item
+            android:id="@+id/nav_perdidas"
+            android:icon="@drawable/provedor"
+            android:title="@string/nav_perdidas" />
+
+        <item
+            android:id="@+id/nav_listapanadero"
+            android:icon="@drawable/provedor"
+            android:title="@string/nav_listapanadero" />
+
+        <item
+            android:id="@+id/nav_usarios"
+            android:icon="@drawable/provedor"
+            android:title="@string/nav_usuarios" />
+
+
+
+
+    </group>
+
+    <item android:title="Mas">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/user"
+                android:title="@string/nav_perfil" />
+            <item
+                android:id="@+id/nav_outsesion"
+                android:icon="@drawable/logout"
+                android:title="@string/nav_out_sesion" />
+        </menu>
+    </item>
+
+</menu>

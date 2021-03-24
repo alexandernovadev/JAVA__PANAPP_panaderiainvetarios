@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Provedores.EditProvedorActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearbtnDoneDeleteprovedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imacercleDoneaddproduct"
+                app:srcCompat="@drawable/delete" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearbtnbackeditprovedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imacerclebackaddproduct"
+                app:srcCompat="@drawable/cercleback" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleEditprovedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/title_editprovedor"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/linearbtnbackeditprovedor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearbtnDoneEditprovedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/linearbtnDoneDeleteprovedor"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imacercleDoneaddproduct"
+                app:srcCompat="@drawable/edit" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewprovedoredit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearbtnDoneDeleteprovedor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/lienartoIMGeditprovedor"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/editimagepreviewprovedor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/des_imgPreview"
+                            app:srcCompat="@drawable/selectimage" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TVbtn_editimgprovedorpreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/selectimgpreviewaddproducto"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lienartoIMGeditprovedor" />
+
+                    <TextView
+                        android:id="@+id/ValidaacioneditIMGprovedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/validacionIMGproducto"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TVbtn_editimgprovedorpreview" />
+
+                    <TextView
+                        android:id="@+id/titlemarcaeditprovedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/marcapovedor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ValidaacioneditIMGprovedor" />
+
+                    <EditText
+                        android:id="@+id/marcaeditprovedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:autofillHints=" "
+                        android:hint="@string/marcapovedor"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="none|textCapSentences"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titlemarcaeditprovedor"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/titlenameeditprovedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/nombrehpprovedor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/marcaeditprovedor" />
+
+                    <EditText
+                        android:id="@+id/nombreeditprovedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:autofillHints=" "
+                        android:hint="@string/nombrehpprovedor"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="none|textCapSentences"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titlenameeditprovedor"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/titleemaileditprovedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/emailprovedor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nombreeditprovedor" />
+
+                    <EditText
+                        android:id="@+id/emaileditprovedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:autofillHints=" "
+                        android:hint="@string/emailprovedor"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="none|textEmailAddress"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titleemaileditprovedor"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/titletel1editprovedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/tel1provedor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emaileditprovedor" />
+
+                    <EditText
+                        android:id="@+id/tel1editprovedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:autofillHints=" "
+                        android:hint="@string/tel1provedor"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="text|number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titletel1editprovedor"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/titletel2editprovedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:elevation="5dp"
+                        android:text="@string/tel2provedor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tel1editprovedor" />
+
+                    <EditText
+                        android:id="@+id/tel2editprovedor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:autofillHints=" "
+                        android:hint="@string/tel2provedor"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titletel2editprovedor"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/titlediasvisitaprodvedorEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/diasvisita"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.046"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tel2editprovedor" />
+
+                    <TextView
+                        android:id="@+id/titlediasentregaprodvedorEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/diasentrega"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.026"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CHprovevisitajuevesEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHprovevisitamartesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:checked="false"
+                        android:text="@string/martesname"
+                        app:layout_constraintStart_toEndOf="@+id/CHprovevisitalunesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/titlediasvisitaprodvedorEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHprovevisitamiercolesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:checked="false"
+                        android:text="@string/miercolesname"
+                        app:layout_constraintStart_toEndOf="@+id/CHprovevisitamartesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/titlediasvisitaprodvedorEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHprovevisitalunesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:checked="false"
+                        android:text="@string/lunesname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titlediasvisitaprodvedorEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHproveentregalunesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:checked="false"
+                        android:text="@string/lunesname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titlediasentregaprodvedorEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHproveentregamartesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:checked="false"
+                        android:text="@string/martesname"
+                        app:layout_constraintStart_toEndOf="@+id/CHproveentregalunesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/titlediasentregaprodvedorEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHproveentregamiercolesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:checked="false"
+                        android:text="@string/miercolesname"
+                        app:layout_constraintStart_toEndOf="@+id/CHproveentregamartesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/titlediasentregaprodvedorEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHproveentregajuevesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        android:checked="false"
+                        android:text="@string/juevesname"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CHproveentregalunesEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHproveentregaviernesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:checked="false"
+                        android:text="@string/viernesname"
+                        app:layout_constraintStart_toEndOf="@+id/CHproveentregajuevesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/CHproveentregamartesEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHproveentregasabadoEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:checked="false"
+                        android:text="@string/sabadoname"
+                        app:layout_constraintStart_toEndOf="@+id/CHproveentregaviernesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/CHproveentregamiercolesEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHprovevisitajuevesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:checked="false"
+                        android:text="@string/juevesname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CHprovevisitalunesEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHprovevisitaviernesEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="12dp"
+                        android:checked="false"
+                        android:text="@string/viernesname"
+                        app:layout_constraintStart_toEndOf="@+id/CHprovevisitajuevesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/CHprovevisitalunesEDIT" />
+
+                    <CheckBox
+                        android:id="@+id/CHprovevisitasabadoEDIT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="12dp"
+                        android:checked="false"
+                        android:text="@string/sabadoname"
+                        app:layout_constraintStart_toEndOf="@+id/CHprovevisitaviernesEDIT"
+                        app:layout_constraintTop_toBottomOf="@+id/CHprovevisitalunesEDIT" />
+
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

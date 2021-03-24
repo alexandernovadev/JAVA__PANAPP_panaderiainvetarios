@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">PanaderiaApp</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Alexander Nova</string>
+    <string name="nav_header_subtitle">alexander.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Opciones de Drawer-->
+    <string name="nav_ventas">Ventas</string>
+    <string name="nav_inventario">Inventario</string>
+    <string name="nav_pedidos">Pedidos</string>
+    <string name="nav_facturas">Facturas</string>
+    <string name="nav_gastos">Gastos</string>
+    <string name="nav_caja">Caja</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="nav_provedores">Provedores</string>
+    <string name="nav_prestamos">Prestamos</string>
+    <string name="nav_cambios">Cambios</string>
+    <string name="nav_perdidas">Perdidas</string>
+    <string name="nav_listapanadero">Lista Panadero</string>
+    <string name="nav_usuarios">Usuarios</string>
+    <string name="nav_out_sesion">Cerrar Sesion</string>
+    <!--Opciones de Drawer-->
+
+    <string name="tipo_select">Seleccione Tipo</string>
+    <string-array name="tipo_productos">
+        <item>Venta</item>
+        <item>Insumo</item>
+        <item>Servicio</item>
+        <item>Informacion</item>
+    </string-array>
+
+    <!--String De INVENTARIO-->
+    <string name="title_addproduct">Agregar Producto</string>
+    <string name="title_editproducto">Editar Producto</string>
+    <string name="validacionIMGproducto">Debes selecionar una Imagen</string>
+
+    <string name="imacerclebackaddproduct">Backaddproduct</string>
+    <string name="imacercleDoneaddproduct">Doneaddproduct</string>
+
+    <string name="des_imgPreview">Imagen Preview producto</string>
+    <string name="selectimgpreviewaddproducto">SELECCIONAR IMAGEN</string>
+
+    <string name="titleNameaddproduct">Nombre Producto</string>
+    <string name="titleCategoriaproduct">Categoria</string>
+    <string name="titleTipoproduct">Tipo</string>
+    <string name="titleProvedorproduct">Provedor</string>
+    <string name="titleCantidadproduct">Cantidad</string>
+    <string name="titlePrecioCompraproduct">Precio Compra/Provedor</string>
+    <string name="titlePrecioventaproduct">Precio Venta</string>
+    <string name="titleCogigoproduct">Codigo Barras/Unico</string>
+    <string name="titleIvaproduct">Iva</string>
+    <string name="titlePesoproduct">Peso</string>
+    <string name="titleFechaentradaproduct">Fecha Entrada</string>
+    <string name="titleFechasalidaproduct">Fecha Salida</string>
+
+    <string name="ImgFechaentradaproduct">IMG Fecha Entrada</string>
+    <string name="ImgFechasalidaproduct">IMG Fecha Salida</string>
+    <!--String De INVENTARIO-->
+
+    <!--Categoria Inventario-->
+    <string name="title_categoria">Categoria Inventario</string>
+    <string name="imgcategoria">ImagenCategoria</string>
+    <string name="namecategoriaproduct">Nombre Categoria</string>
+    <string name="descripcioncategoriaproducto">Descripcion Categoria</string>
+    <string name="namefilter">Filtro Inventario</string>
+    <string name="namebtnfilter">Filtrar</string>
+
+    <!--Categoria Inventario-->
+
+    <string name="btnClose">Btn Close</string>
+    <string name="btnDelete">Btn Delete</string>
+    <string name="btnEdit">Btn Edit</string>
+
+    <string name="title_activity_ejemplo_tabs">EjemploTabs</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="btn_enviar">Enviar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Provedor-->
+
+    <string name="title_addprovedor">Agregar Provedor</string>
+    <string name="title_editprovedor">Editar Provedor</string>
+    <string name="nombrehpprovedor">Nombre Provedor</string>
+    <string name="marcapovedor">Marca Provedor</string>
+    <string name="emailprovedor">Email Provedor</string>
+    <string name="tel1provedor">Telefono 1 Provedor</string>
+    <string name="tel2provedor">Telefono 2 Provedor</string>
+    <string name="selectimgprovedor">SELECCIONE IMAGEN</string>
+    <string name="titleaddprovedor">Agregar Provedor</string>
+    <string name="titleeditprovedor">Editar Provedor</string>
+    <string name="imgprovedor">Imagen Provedor</string>
+    <string name="diasvisita">Dias Visita</string>
+    <string name="diasentrega">Dias Entrega</string>
+
+        <!--Dias-->
+        <string name="lunesname">Lunes</string>
+        <string name="martesname">Martes</string>
+        <string name="miercolesname">Miercoles</string>
+        <string name="juevesname">Jueves</string>
+        <string name="viernesname">Viernes</string>
+        <string name="sabadoname">Sabado</string>
+
+
+    <!--Provedor-->
+
+</resources>

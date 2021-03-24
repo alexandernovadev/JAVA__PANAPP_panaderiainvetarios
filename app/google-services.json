@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "283343799205",
+    "firebase_url": "https://panapp-8ce89.firebaseio.com",
+    "project_id": "panapp-8ce89",
+    "storage_bucket": "panapp-8ce89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283343799205:android:2db3e331458c3934",
+        "android_client_info": {
+          "package_name": "com.imperiozipa.panaderiaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283343799205-a3tcrkrruggps8f0fcjaphtk0mo18m0t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imperiozipa.panaderiaapp",
+            "certificate_hash": "692718617ea54940bdcb9218f6169832b83ac21f"
+          }
+        },
+        {
+          "client_id": "283343799205-s80s1927chebr1apn87b4d8rm160tqir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPsPCP_ajXYxj9_XmyXiMCQ9gAwmPacU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283343799205-s80s1927chebr1apn87b4d8rm160tqir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
